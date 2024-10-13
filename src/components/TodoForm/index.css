@@ -1,0 +1,45 @@
+.todoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.todoForm h1 {
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+
+
+.todoForm-input {
+    margin-top: 1rem;
+    border: 2px solid rebeccapurple;
+}
+
+.todoForm-input > * {
+    padding: .5rem 1rem;
+    font-size: var(--fs-500);
+    text-transform: uppercase;
+}
+
+.todoForm-input input {
+    background-color: white;
+    border: none;
+}
+
+.todoForm-input button {
+    border: none;
+    background-color: rebeccapurple;
+}
+
+.todoForm-input button:hover {
+    border: none;
+    background-color: rgba(102, 51, 153, 0.782);
+    cursor: pointer;
+}
+
+.todoForm-input button:active {
+    border: none;
+    background-color: rgba(102, 51, 153, 0.502);
+    /* box-shadow: 1px 1px 1px; */
+}
