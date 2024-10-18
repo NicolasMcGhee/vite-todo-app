@@ -1,0 +1,15 @@
+.todoEdit {
+    padding: 1rem 2rem;
+}
+
+.todoEdit input {
+    padding: .5rem 1rem;
+    max-width: 100%;
+}
+
+.todoEdit button {
+    padding: 1rem 2rem;
+    background-color: rebeccapurple;
+    border: none;
+    
+}

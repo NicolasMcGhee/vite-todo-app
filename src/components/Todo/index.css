@@ -1,15 +1,16 @@
 .todo {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 60%;
     margin-inline: auto;
     border: 1px solid black;
+    margin-bottom: 2rem;
 }
 
 .todo p {
-    background-color: black;
-    color: rebeccapurple;
+    /* background-color: black; */
+    /* color: rebeccapurple; */
     margin: 1rem 0;
     padding: .5rem 1rem;
 }
@@ -19,4 +20,27 @@
     border: none;
     background-color: rebeccapurple;
     margin: 0 .5rem;
+}
+
+
+
+.fade {
+    opacity: 1;
+}
+
+
+.show {
+    animation-name: delete;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes delete {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

@@ -79,3 +79,7 @@
   /* border: 1px solid; */
   text-align: center;
 }
+
+.todoWrapper {
+  margin-top: 2rem;
+}

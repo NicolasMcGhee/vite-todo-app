@@ -1,16 +1,19 @@
-import React from 'react'
-import './index.css'
+import React from "react";
+import "./index.css";
 
-
-export default function TodoForm() {
+export default function TodoForm({handleSubmit, setName, name}) {
   return (
-    <div className='ff-sans-cond todoForm fs-600 uppercase'>
-        <h1>React Todo App</h1>
-        <div className='todoForm-input'>
-            <input type='text' placeholder='What is your task?'/>
-            <button>Add Task</button>
-        </div>
-        
+
+    <div className="ff-sans-cond todoForm fs-600 uppercase">
+      <h1>React Todo App</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <button onClick={handleSubmit}>Add Todo</button>
+      </form>
     </div>
-  )
+  );
 }
